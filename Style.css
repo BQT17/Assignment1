@@ -1,19 +1,130 @@
-h1 {
-    font-size: 400px;
-  }
-header {
-    background: #000000;
-    padding: 0 24px;
-    color: white; 
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #252525;
+  color: #333;
+  line-height: 1.6;
 }
 
-body {
-    background: #000000;
-    color: white; 
-    height: 100vh;
+main {
+  padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+  background: #333;
+  color: hwb(0 100% 0%);
+  padding: 10px 0;
+  text-align: center;
+}
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: #00bcd4;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Section Styling */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+form input, form textarea, form button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background: #00bcd4;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+table th {
+  background: #333;
+  color: #fff;
+}
+table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .navbar li {
+      display: block;
+      margin: 10px 0;
   }
+  body {
+      font-size: 14px;
+  }
+  table {
+      font-size: 14px;
+  }
+}
+
+/* Hero Section Image */
+.hero-image {
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,43 +7,75 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h2>Contact Me</h2>
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <table>
-            <tr>
-                <th>Contact Method</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>tqbao1717@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Phone</td>
-                <td>+647-606-7421</td>
-            </tr>
-            <tr>
-                <td>Social Media</td>
-                <td>instagram: @bread.wont.stop.talking</td>
-            </tr>
-        </table>
-    </section>
+    <!-- Contact Information -->
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to use the details below or send me a message using the form.</p>
 
+            <table class="contact-table">
+                <thead>
+                    <tr>
+                        <th>Contact Method</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Email</td>
+                        <td><a href="mailto:tqbao1717@gmail.com">tqbao1717@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+647-606-7421</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media</td>
+                        <td>
+                            Instagram: <a href="https://www.instagram.com/bread.wont.stop.talking/" target="_blank">@bread.wont.stop.talking</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <h3>Send Me a Message</h3>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
         <p>Follow me: 
-            <a href="https://github.com/BQT17">Github</a> | 
-            <a href="https://www.instagram.com/bread.wont.stop.talking/">Instgram</a>
+            <a href="https://github.com/BQT17" target="_blank">GitHub</a> | 
+            <a href="https://www.instagram.com/bread.wont.stop.talking/" target="_blank">Instagram</a>
         </p>
     </footer>
-    <nav></nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About me</a></li>
-        </ul>
-    </nav>
 </body>
 </html>
